@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>リクエスト使用例</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <h1>通知したい課題の情報を入力してください</h1>
+    <form method="post">
+        <div>
+            <label for="userID">学籍番号を入力</label>
+            <input type="textarea" name="userID" placeholder="学籍番号を入力">
+            <p></p>
+            <label for="password">パスワードを入力</label>
+            <input type="password" name="password" placeholder="パスワードを入力" />
+        </div>
+        
+        <p>通知してほしい科目を選んでください：</p>
+        <!-- セレクトボックス -->
+        授業の選択：&nbsp;<select name="lectureSelector">
+            <option value="数学Ｃ">数学Ｃ</option>
+            <option value="心の科学">心の科学</option>
+            <option value="現代の社会経済">現代の社会経済</option>
+            <option value="くらしと法律">くらしと法律</option>
+            <option value="Ｃプログラミング">Ｃプログラミング</option>
+            <option value="フーリエ基礎">フーリエ基礎</option>
+            <option value="離散数学">離散数学</option>
+            <option value="情報処理システム論">情報処理システム論</option>
+            <option value="電子回路">電子回路</option>
+            <option value="コンピュータと言語処理">コンピュータと言語処理</option>
+            <option value="モバイルコンピューティング">モバイルコンピューティング</option>
+            <option value="コンピュータアーキテクチャ">コンピュータアーキテクチャ</option>
+            </select>
+        
+            <p>科目回数を選んでください：<span id="add"></span></p>
+            <div>
+              科目回数：&nbsp;<select name="numberSelector">
+            <option value="0">全ての日程</option>
+            <option value="1">1回目の講義</option>
+            <option value="2">2回目の講義</option>
+            <option value="3">3回目の講義</option>
+            <option value="4">休講</option>
+            <option value="5">4回目の講義</option>
+            <option value="6">5回目の講義</option>
+            <option value="7">6回目の講義</option>
+            <option value="8">7回目の講義</option>
+            <option value="9">8回目の講義</option>
+            <option value="10">9回目の講義</option>
+            <option value="11">10回目の講義</option>
+            <option value="12">11回目の講義</option>
+            <option value="13">12回目の講義</option>
+            <option value="14">13回目の講義</option>
+            <option value="15">14回目の講義</option>
+            <option value="16">15回目の講義</option>
+            <option selected="selected" value="17">16回目 補講</option>
+            </select>
+        
+            <p>課題通知をいつにしますか？<span id="multiply"></span></p>
+            <!-- 日付入力 -->
+            <input type="date" name= "date"></input>
+            <input type="time" name="example1">
+
+        <p><input type="submit" value="送信"></p>
+    </form>
+    <p></p>
+
+</body>
+
+</html>
